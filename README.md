@@ -1,6 +1,7 @@
 # shopping_assistantnew
 
-A new Flutter application.
+Following the tutorial "Learn Flutter and Dart to Build iOS and Android Apps 2020" by
+Maximilian Schwarzmüller
 
 ## Getting Started
 
