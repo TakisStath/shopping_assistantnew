@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:provider/provider.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter/material.dart';
@@ -16,6 +17,35 @@ class ProductDetailScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(loadedProduct.title),
+      ),
+      body: Column(
+        children: <Widget>[
+          Container(
+            height: 300,
+            width: double.infinity,
+            child: Image.network(loadedProduct.imageURL, fit: BoxFit.cover),
+          ),
+          SizedBox(
+            height: 10,
+          ),
+          Text(
+            'Price: \$ ${loadedProduct.price}',
+            style: TextStyle(color: Colors.grey, fontSize: 20),
+          ),
+          SizedBox(
+            height: 10,
+          ),
+          Container(
+            width: double.infinity,
+            padding: EdgeInsets.all(12),
+            child: Text(
+              ' ${loadedProduct.description}',
+              textAlign: TextAlign.center,
+              softWrap: true,
+              style: TextStyle(color: Colors.grey, fontSize: 20),
+            ),
+          )
+        ],
       ),
     );
   }

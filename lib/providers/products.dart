@@ -10,7 +10,8 @@ class Products with ChangeNotifier {
     Product(
         id: '001',
         title: 'Beans',
-        description: 'A tin of beans',
+        description:
+            'Baked Beans in tomato sauce. Beanz Meanz Heinz. We could tell you that our Beanz are hard to beat. That they\'re brimming with deliciously rich, tomatoey flavour. ',
         price: 0.80,
         imageURL:
             'https://c8.alamy.com/comp/d2x60x/tin-of-heinz-baked-beans-uk-d2x60x.jpg'),
